@@ -43,3 +43,15 @@ class Vaccination:
 
     def setAdministered_location(self, administered_location):
         self.administered_location = administered_location
+
+    def __str__(self):
+        return f"Vaccine: {self.vaccine}, Patient : {self.patient}" \
+               f", Administered on: {self.administered_date}, Administered at: {self.administered_location} "
+
+
+if __name__ == "__main__":
+    import Vaccine
+    import datetime
+
+    vax1 = Vaccination(Vaccine.Vaccine("Mugl", "Kugl", 3), "Helga Huso", datetime.datetime.now(), "Pfarrkirchen")
+    print(vax1)

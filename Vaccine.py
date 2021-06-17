@@ -36,3 +36,11 @@ class Vaccine:
             self.doses = doses
         else:
             raise ValueError("Please input an int as dosage")
+
+    def __str__(self):
+        return f"Vaccine name: {self.name}, Manufacturer: {self.manufacturer}" \
+               f", Number of doses required: {self.doses} "
+
+if __name__ == "__main__":
+    vac1 = Vaccine("Mugl", "Kugl", 3)
+    print(vac1)
