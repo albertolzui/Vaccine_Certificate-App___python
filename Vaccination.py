@@ -1,13 +1,18 @@
 class Vaccination:
 
     # constructor
-    def __init__(self, vaccine, patient, administered_date, administered_location):
+    def __init__(self,vaccination_id, vaccine, patient, administered_date, administered_location):
+        self.vaccination_id = vaccination_id
         self.vaccine = vaccine
         self.patient = patient
         self.administered_date = administered_date
         self.administered_location = administered_location
 
     # getters
+
+    # get Vaccination ID
+    def getVaccination_ID(self):
+        return self.vaccination_id
 
     # get Vaccine info
     def getVaccine(self):
@@ -44,8 +49,12 @@ class Vaccination:
     def setAdministered_location(self, administered_location):
         self.administered_location = administered_location
 
+    # set Vaccination ID
+    def setVaccination_ID(self, vaccination_id):
+        self.vaccination_id = vaccination_id
+
     def __str__(self):
-        return f"Vaccine: {self.vaccine}, Patient : {self.patient}" \
+        return f"Vaccination ID: {self.vaccination_id}, Vaccine: {self.vaccine}, Patient : {self.patient}" \
                f", Administered on: {self.administered_date}, Administered at: {self.administered_location} "
 
 
