@@ -1,11 +1,12 @@
 import sys
 
-class Menu(object):
+class Menu:
     def __init__(self):
+        #self.user = user
         self.choices = {
-            "1": "todo",
-            "2": "todo",
-            "3": "todo",
+            "1": "patient",
+            "2": "vaccination",
+            "3": "qr scan",
             "4": "todo",
             "5": self.exit
         }

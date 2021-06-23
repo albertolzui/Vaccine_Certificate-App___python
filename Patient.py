@@ -6,11 +6,11 @@ class Patient:
         self.sex=sex
         print("Patient was created")
 
-    def setUsername(username):
+    def setUsername(self,username):
         self.username = username
-    def setName(name):
+    def setName(self,name):
         self.name=name
-    def setAge(age):
+    def setAge(self,age):
         self.age = age
     def setSex(self, sex):
         self.sex = sex
@@ -24,7 +24,11 @@ class Patient:
     def getSex(self):
         return self.sex
     def output(self):
-        print(self.username,self.name,self.age,self.sex)
+        print("Username: ",self.username,"\n","Patient name: ",self.name,"\n","Patient age: ",self.age,"\n","Patient sex:",self.sex)
 
-patient1=Patient("eldargaifullin","Eldar Gaifullin",33,"male")
-patient1.output()
+#patient1=Patient("eldargaifullin","Eldar Gaifullin",33,"male")
+#patient1.output()
+
+if __name__ == "__main__":
+    patient1 = Patient("fabian23","Fabian Benc",23,"Male")
+    patient1.output()

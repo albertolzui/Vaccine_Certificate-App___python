@@ -62,5 +62,5 @@ if __name__ == "__main__":
     import Vaccine
     import datetime
 
-    vax1 = Vaccination(Vaccine.Vaccine("Mugl", "Kugl", 3), "Helga Huso", datetime.datetime.now(), "Pfarrkirchen")
+    vax1 = Vaccination("1",Vaccine.Vaccine("Mugl", "Kugl", 3), "Helga Huso", datetime.datetime.now(), "Pfarrkirchen")
     print(vax1)

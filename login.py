@@ -4,10 +4,10 @@ class login:
         self.password = str(password)
 
     # setter
-    def setUsername(username):
+    def setUsername(self,username):
         self.username = username
 
-    def setPassword(password):
+    def setPassword(self,password):
         self.password = password
 
     # getter
@@ -20,6 +20,7 @@ class login:
 
 
     def check_login(self):
+        
         f = open("users.txt", "r")
         for line in f.readlines():
             us, pw = line.strip().split("|")
@@ -29,5 +30,9 @@ class login:
         print("Wrong username/password")
         return False
 
-login_key=login("fabian23", 1234)
-login_key.check_login()
+#login_key=login("fabian23", 1234)
+#login_key.check_login()
+
+if __name__ == "__main__":
+    log = login()
+    log.check_login()
