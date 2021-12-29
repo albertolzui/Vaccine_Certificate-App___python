@@ -9,8 +9,8 @@ from login import login
 
 
 def main():
-    log = login(input("Username: "),getpass.getpass(prompt="Password: "))
-        
+    log = login(input("Username: "), getpass.getpass(prompt="Password: "))
+
     if log.username == "fabian23" and log.password == "1234":
         mainMenuf = mf.MenuF()
         mainMenuf.runCode()
@@ -35,5 +35,5 @@ def main():
         mainMenu = mn.Menu()
         mainMenu.runCode()
 
-main()
 
+main()
